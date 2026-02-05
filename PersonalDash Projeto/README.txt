@@ -1,9 +1,5 @@
 # 📊 PersonalDash - Dashboard de Gestão Pessoal
 
-![PersonalDash Preview](https://img.shields.io/badge/PersonalDash-Dashboard-blue)
-![Status](https://img.shields.io/badge/Status-Online-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-green)
-
 Um dashboard pessoal moderno para gerenciamento de tarefas com sistema de autenticação seguro.
 
 ## ✨ Funcionalidades
@@ -35,4 +31,5 @@ Um dashboard pessoal moderno para gerenciamento de tarefas com sistema de autent
 
 1. Clone o repositório:
 ```bash
+
 git clone https://github.com/seu-usuario/PersonalDash.git
