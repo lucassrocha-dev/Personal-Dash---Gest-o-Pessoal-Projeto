@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalDash Sign In</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+</head>
+
+<body>
+    <header class="hotbar">
+        <!-- Hotbar vazia -->
+    </header>
+
+    <main class="login">
+        <h2>Login no PersonalDash</h2>
+
+        <!-- Área para mensagens -->
+        <div id="loginMessage" class="message-container"></div>
+        
+        <!-- Input do login -->
+        <input type="text" id="login1" placeholder="Digite seu login">
+        
+        <!-- Input da senha e botão de visibilidade -->
+        <div class="password-container">
+            <input type="password" id="password1" placeholder="Digite sua senha">
+            <button type="button" class="show-password-btn" onclick="togglePasswordVisibility('password1')">
+                👁️
+            </button>
+        </div>
+        
+        <!-- Botão de login -->
+        <button id="loginBtn">Entrar</button><br>
+        <p>Ainda não tem uma conta? <a href="register.html">Registre-se aqui</a></p>
+    </main>
+
+    <!-- Rodapé da página com informações de contato e links -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TWIO - The World is Our</h3>
+                <div class="contact-info">
+                    <p>📍 Jacutinga - MG</p>
+                    <p>📧 lvfr3112@gmail.com</p>
+                    <p>📱 (35) 99146-6894</p>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Desenvolvedor</h3>
+                <p>© 2025 Lucas Rocha</p>
+                <p>Todos os direitos reservados.</p>
+                <p class="developer-tag">
+                    (by Lucas Rocha) —
+                    <a href="https://www.instagram.com/stylelucass/" target="_blank" rel="noopener noreferrer" class="social-link">
+                        @stylelucass
+                    </a>
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Siga-nos</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/stylelucass/" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <span>📷</span> Instagram
+                    </a>
+                    <a href="https://www.linkedin.com/in/lucas-rocha-16001a251/" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <span>💼</span> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>PersonalDash - Dashboard de Gestão Pessoal</p>
+            <p>Desenvolvido com HTML, CSS e JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="../public/js/auth.js"></script>
+    
+</body>
+
+</html>

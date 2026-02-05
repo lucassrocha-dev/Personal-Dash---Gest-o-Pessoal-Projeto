@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>PersonalDash</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+</head>
+
+<body>
+    <!-- Barra de navegação superior -->
+    <nav class="hotbar" style="text-align: right;">
+        <!-- A hotbar será preenchida dinamicamente pelo auth.js -->
+    </nav>
+
+    <!-- Cabeçalho principal com mensagem de boas-vindas -->
+    <div class="container" style="text-align: center;">
+        <h2>Bem-vindo ao seu Dashboard de Gestão Pessoal</h2>
+    </div>
+
+    <!-- Conteúdo principal da aplicação - Gerenciador de Tarefas -->
+    <main class="container-tasks">
+        <h1>Minhas Tarefas</h1>
+
+        <div class="task-stats">
+            <span id="taskCounter">0 tarefas</span>
+            <span id="completedCounter">0 completas</span>
+        </div>
+
+        <div class="task-filters">
+            <button class="filter-btn active" onclick="filterTasks('all')">Todas</button>
+            <button class="filter-btn" onclick="filterTasks('active')">Pendentes</button>
+            <button class="filter-btn" onclick="filterTasks('completed')">Completas</button>
+        </div>
+
+        <!-- Formulário para adicionar novas tarefas -->
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Digite uma nova tarefa">
+            <input type="time" id="taskTime" placeholder="Digite o horário da tarefa">
+            <button id="addTaskBtn">Adicionar</button>
+        </div>
+
+        <!-- Lista onde as tarefas serão renderizadas dinamicamente -->
+        <ul id="taskList">
+            <!-- Conteúdo inicial vazio - preenchido via JavaScript -->
+        </ul>
+    </main>
+
+    <!-- Rodapé da página com informações de contato e links -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TWIO - The World is Our</h3>
+                <div class="contact-info">
+                    <p>📍 Jacutinga - MG</p>
+                    <p>📧 lvfr3112@gmail.com</p>
+                    <p>📱 (35) 99146-6894</p>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Desenvolvedor</h3>
+                <p>© 2025 Lucas Rocha</p>
+                <p>Todos os direitos reservados.</p>
+                <p class="developer-tag">
+                    (by Lucas Rocha) —
+                    <a href="https://www.instagram.com/stylelucass/" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
+                        @stylelucass
+                    </a>
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Siga-nos</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/stylelucass/" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
+                        <span>📷</span> Instagram
+                    </a>
+                    <a href="https://www.linkedin.com/in/lucas-rocha-16001a251/" target="_blank"
+                        rel="noopener noreferrer" class="social-link">
+                        <span>💼</span> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>PersonalDash - Dashboard de Gestão Pessoal</p>
+            <p>Desenvolvido com HTML, CSS e JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Inclusão do JavaScript -->
+    <script src="../public/js/script.js"></script>
+    <script src="../public/js/auth.js"></script>
+</body>
+
+</html>

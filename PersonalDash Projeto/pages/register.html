@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PersonalDash - Registrar</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+</head>
+
+<body>
+    <header class="hotbar">
+        <!-- Hotbar será preenchida pelo auth.js se necessário -->
+    </header>
+
+    <main class="login">
+        <h2>Criar Conta no PersonalDash</h2>
+
+        <!-- Formulário de registro -->
+        <input type="text" id="regName" placeholder="Seu nome completo" required>
+        <input type="email" id="regEmail" placeholder="Seu melhor e-mail" required>
+        <input type="text" id="regUsername" placeholder="Escolha um nome de usuário" required maxlength="20">
+
+        <!-- Campo de senha -->
+        <div class="password-container">
+            <input type="password" id="regPassword" placeholder="Crie uma senha (mínimo 8 caracteres)" required>
+            <button type="button" class="show-password-btn" onclick="togglePasswordVisibility('regPassword')">
+                👁️
+            </button>
+        </div>
+
+        <!-- Campo de confirmação de senha -->
+        <div class="password-container">
+            <input type="password" id="regConfirmPassword" placeholder="Confirme a senha" required>
+            <button type="button" class="show-password-btn" onclick="togglePasswordVisibility('regConfirmPassword')">
+                👁️
+            </button>
+        </div>
+
+        <!-- Indicador de força da senha -->
+        <div class="password-strength" id="passwordStrength">
+            <div class="strength-meter">
+                <div class="strength-bar"></div>
+            </div>
+            <div class="strength-text"></div>
+        </div>
+
+        <p class="password-hint">
+            A senha deve ter no mínimo 8 caracteres, incluindo maiúsculas, minúsculas, números e símbolos.
+        </p>
+
+        <!-- Botão de registro -->
+        <button id="registerBtn">Criar Conta</button>
+
+        <!-- Link para a página de login -->
+        <p style="margin-top: 15px;">
+            Já tem uma conta? <a href="login.html">Faça login aqui</a>
+        </p>
+
+        <!-- Mensagens de erro/sucesso -->
+        <div id="registerMessage" class="message-container"></div>
+    </main>
+
+    <!-- Rodapé da página com informações de contato e links -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TWIO - The World is Our</h3>
+                <div class="contact-info">
+                    <p>📍 Jacutinga - MG</p>
+                    <p>📧 lvfr3112@gmail.com</p>
+                    <p>📱 (35) 99146-6894</p>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Desenvolvedor</h3>
+                <p>© 2025 Lucas Rocha</p>
+                <p>Todos os direitos reservados.</p>
+                <p class="developer-tag">
+                    (by Lucas Rocha) —
+                    <a href="https://www.instagram.com/stylelucass/" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
+                        @stylelucass
+                    </a>
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Siga-nos</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/stylelucass/" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
+                        <span>📷</span> Instagram
+                    </a>
+                    <a href="https://www.linkedin.com/in/lucas-rocha-16001a251/" target="_blank"
+                        rel="noopener noreferrer" class="social-link">
+                        <span>💼</span> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>PersonalDash - Dashboard de Gestão Pessoal</p>
+            <p>Desenvolvido com HTML, CSS e JavaScript</p>
+        </div>
+    </footer>
+
+
+    <script src="../public/js/auth.js"></script>
+
+</body>
+
+</html>

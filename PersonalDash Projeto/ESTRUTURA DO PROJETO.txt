@@ -1,0 +1,22 @@
+PersonalDash Projeto/
+│
+├── public/
+│   ├── css/
+│   │   └── style.css              # CSS completo
+│   ├── js/
+│   │   ├── auth.js                # Sistema de autenticação
+│   │   └── script.js              # Gerenciador de tarefas
+│   └── background.gif             # Imagem de fundo
+│
+├── pages/
+│   ├── index.html                 # Dashboard principal
+│   ├── login.html                 # Tela de login
+│   └── register.html              # Tela de registro
+│
+├── screenshots/                   # (Opcional) Screenshots para README
+│   ├── login.png
+│   └── dashboard.png
+│
+├── README.md                      # Documentação
+├── LICENSE                        # Licença MIT
+└── .gitignore                     # Arquivos ignorados
