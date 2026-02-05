@@ -32,4 +32,5 @@ Um dashboard pessoal moderno para gerenciamento de tarefas com sistema de autent
 1. Clone o repositório:
 ```bash
 
-git clone https://github.com/seu-usuario/PersonalDash.git
+git clone https://github.com/lucassrocha-dev/PersonalDash.git
+
